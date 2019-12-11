@@ -1,6 +1,6 @@
 node{
 	stage('SCM CHECKOUT'){
-		git ''
+		git 'https://github.com/georgelezil/training-center.git'
 	}
 	stage('Compile Package'){
 		sh 'mvn package'
